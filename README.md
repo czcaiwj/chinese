@@ -33,9 +33,14 @@ PUA增补 | 207 | E600-E6CF
 根据上述字符范围，可以使用本工具来识别给定字符串是否含义中文字符。
 
 ## 安装方法
+
+```bash
 pip install nihao
+```
 
 ## 使用方法
+
+```python
 import nihao
 a = '这里包含了中文abcded'
 b = 'there is no chinese here'
@@ -49,3 +54,4 @@ def test_chinese2():
     result = nihao.containChinese(b)
     expected = False
     assert result == expected
+```
